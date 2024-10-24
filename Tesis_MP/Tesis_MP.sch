@@ -1,0 +1,578 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 8268 11693 portrait
+encoding utf-8
+Sheet 1 1
+Title "Esquemático "
+Date ""
+Rev "R0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L sensores:DHT22_Temperature_Humidity_AM2302 TH?
+U 1 1 65D95A30
+P 6450 4450
+F 0 "TH?" H 6728 4695 60  0000 L CNN
+F 1 "DHT22_Temperature_Humidity_AM2302" H 5600 5300 60  0000 L CNB
+F 2 "" H 6500 4350 60  0000 C CNN
+F 3 "" H 6500 4350 60  0000 C CNN
+	1    6450 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L sensores:Fuente-Poder-S-25-5 U?
+U 1 1 65DB9B1D
+P 1350 850
+F 0 "U?" H 1578 538 50  0000 L CNN
+F 1 "Fuente-Poder-S-25-5" H 791 880 50  0000 L CNB
+F 2 "" H 1350 850 50  0001 C CNN
+F 3 "" H 1350 850 50  0001 C CNN
+	1    1350 850 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65DD5E95
+P 1400 1700
+F 0 "#PWR?" H 1400 1450 50  0001 C CNN
+F 1 "GNDREF" H 1405 1527 50  0000 C CNN
+F 2 "" H 1400 1700 50  0001 C CNN
+F 3 "" H 1400 1700 50  0001 C CNN
+	1    1400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65E199E4
+P 6000 4900
+F 0 "#PWR?" H 6000 4750 50  0001 C CNN
+F 1 "+5V" H 6015 5073 50  0000 C CNN
+F 2 "" H 6000 4900 50  0001 C CNN
+F 3 "" H 6000 4900 50  0001 C CNN
+	1    6000 4900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65E19EED
+P 1700 1600
+F 0 "#PWR?" H 1700 1450 50  0001 C CNN
+F 1 "+5V" H 1715 1773 50  0000 C CNN
+F 2 "" H 1700 1600 50  0001 C CNN
+F 3 "" H 1700 1600 50  0001 C CNN
+	1    1700 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65E20CD0
+P 5700 6850
+F 0 "#PWR?" H 5700 6700 50  0001 C CNN
+F 1 "+5V" H 5715 7023 50  0000 C CNN
+F 2 "" H 5700 6850 50  0001 C CNN
+F 3 "" H 5700 6850 50  0001 C CNN
+	1    5700 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65E3A9FD
+P 6850 5250
+F 0 "#PWR?" H 6850 5000 50  0001 C CNN
+F 1 "GNDREF" H 6855 5077 50  0000 C CNN
+F 2 "" H 6850 5250 50  0001 C CNN
+F 3 "" H 6850 5250 50  0001 C CNN
+	1    6850 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65E3E737
+P 2800 9950
+F 0 "#PWR?" H 2800 9700 50  0001 C CNN
+F 1 "GNDREF" H 2805 9777 50  0000 C CNN
+F 2 "" H 2800 9950 50  0001 C CNN
+F 3 "" H 2800 9950 50  0001 C CNN
+	1    2800 9950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 4800 6350 4900
+Wire Wire Line
+	6550 4800 6550 4900
+Wire Wire Line
+	2650 9800 2650 9950
+Wire Wire Line
+	2650 9950 2800 9950
+Wire Wire Line
+	5700 6850 6050 6850
+Wire Wire Line
+	1500 1500 1500 1600
+Wire Wire Line
+	1500 1600 1700 1600
+Wire Wire Line
+	1400 1500 1400 1700
+$Comp
+L power:VAC #PWR?
+U 1 1 65E7BAAE
+P 1000 2000
+F 0 "#PWR?" H 1000 1900 50  0001 C CNN
+F 1 "VAC" H 1000 2275 50  0000 C CNN
+F 2 "" H 1000 2000 50  0001 C CNN
+F 3 "" H 1000 2000 50  0001 C CNN
+	1    1000 2000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 1500 1200 2000
+Wire Wire Line
+	1000 2000 1200 2000
+$Comp
+L power:Earth_Protective #PWR?
+U 1 1 65E89180
+P 1350 2050
+F 0 "#PWR?" H 1600 1800 50  0001 C CNN
+F 1 "Earth_Protective" H 1800 1900 50  0001 C CNN
+F 2 "" H 1350 1950 50  0001 C CNN
+F 3 "~" H 1350 1950 50  0001 C CNN
+	1    1350 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1500 1300 2050
+Wire Wire Line
+	1300 2050 1350 2050
+Wire Wire Line
+	6050 6950 5950 6950
+Wire Wire Line
+	5950 6950 5950 7050
+Wire Wire Line
+	6450 4800 6450 5300
+Wire Wire Line
+	6000 4900 6350 4900
+Wire Wire Line
+	6450 5300 6400 5300
+Connection ~ 6450 5300
+Wire Wire Line
+	6450 5300 6450 5550
+$Comp
+L power:+5V #PWR?
+U 1 1 65EA8665
+P 6000 5300
+F 0 "#PWR?" H 6000 5150 50  0001 C CNN
+F 1 "+5V" H 6015 5473 50  0000 C CNN
+F 2 "" H 6000 5300 50  0001 C CNN
+F 3 "" H 6000 5300 50  0001 C CNN
+	1    6000 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6100 5300 6000 5300
+$Comp
+L Device:C C?
+U 1 1 65EAFEDD
+P 6850 5050
+F 0 "C?" H 6965 5096 50  0000 L CNN
+F 1 "100n" H 6965 5005 50  0000 L CNN
+F 2 "" H 6888 4900 50  0001 C CNN
+F 3 "~" H 6850 5050 50  0001 C CNN
+	1    6850 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6550 4900 6850 4900
+Wire Wire Line
+	6850 5200 6850 5250
+$Comp
+L Regulator_Linear:LM1117-3.3 U?
+U 1 1 65ECBDBA
+P 2300 1600
+F 0 "U?" H 2300 1842 50  0000 C CNN
+F 1 "LM1117-3.3" H 2300 1751 50  0000 C CNB
+F 2 "" H 2300 1600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 2300 1600 50  0001 C CNN
+	1    2300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65ECC9E2
+P 2300 1900
+F 0 "#PWR?" H 2300 1650 50  0001 C CNN
+F 1 "GNDREF" H 2305 1727 50  0000 C CNN
+F 2 "" H 2300 1900 50  0001 C CNN
+F 3 "" H 2300 1900 50  0001 C CNN
+	1    2300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 65ECD0F4
+P 2600 1600
+F 0 "#PWR?" H 2600 1450 50  0001 C CNN
+F 1 "+3.3V" H 2450 1750 50  0000 C CNN
+F 2 "" H 2600 1600 50  0001 C CNN
+F 3 "" H 2600 1600 50  0001 C CNN
+	1    2600 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65ECD916
+P 1700 1600
+F 0 "#PWR?" H 1700 1450 50  0001 C CNN
+F 1 "+5V" H 1715 1773 50  0000 C CNN
+F 2 "" H 1700 1600 50  0001 C CNN
+F 3 "" H 1700 1600 50  0001 C CNN
+	1    1700 1600
+	-1   0    0    1   
+$EndComp
+Connection ~ 1700 1600
+$Comp
+L Device:R R?
+U 1 1 65EA62C0
+P 6250 5300
+F 0 "R?" V 6043 5300 50  0000 C CNN
+F 1 "4k" V 6134 5300 50  0000 C CNN
+F 2 "" V 6180 5300 50  0001 C CNN
+F 3 "~" H 6250 5300 50  0001 C CNN
+	1    6250 5300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65E39266
+P 5950 7350
+F 0 "#PWR?" H 5950 7100 50  0001 C CNN
+F 1 "GNDREF" H 5955 7177 50  0000 C CNN
+F 2 "" H 5950 7350 50  0001 C CNN
+F 3 "" H 5950 7350 50  0001 C CNN
+	1    5950 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 65F5623D
+P 5950 7200
+F 0 "C?" H 6065 7246 50  0000 L CNN
+F 1 "100n" H 6065 7155 50  0000 L CNN
+F 2 "" H 5988 7050 50  0001 C CNN
+F 3 "~" H 5950 7200 50  0001 C CNN
+	1    5950 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 9200 5550 9350
+Wire Wire Line
+	5650 9200 5550 9200
+Wire Wire Line
+	5300 9100 5650 9100
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65E3B2DD
+P 5550 9350
+F 0 "#PWR?" H 5550 9100 50  0001 C CNN
+F 1 "GNDREF" H 5555 9177 50  0000 C CNN
+F 2 "" H 5550 9350 50  0001 C CNN
+F 3 "" H 5550 9350 50  0001 C CNN
+	1    5550 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65E2AB0C
+P 5300 9100
+F 0 "#PWR?" H 5300 8950 50  0001 C CNN
+F 1 "+5V" H 5315 9273 50  0000 C CNN
+F 2 "" H 5300 9100 50  0001 C CNN
+F 3 "" H 5300 9100 50  0001 C CNN
+	1    5300 9100
+	-1   0    0    1   
+$EndComp
+$Comp
+L sensors:Micro_SD_Card_6pin J?
+U 1 1 65D97A07
+P 6550 9000
+F 0 "J?" H 7380 8996 50  0000 L CNN
+F 1 "Micro_SD_Card_6pin" H 6150 9650 50  0000 L CNB
+F 2 "" H 7700 9300 50  0001 C CNN
+F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 6550 9000 50  0001 C CNN
+	1    6550 9000
+	1    0    0    -1  
+$EndComp
+$Comp
+L crumpschemes:Tiny_RTC_DS1307 U?
+U 1 1 65D9361B
+P 6550 6800
+F 0 "U?" H 6550 7387 60  0000 C CNN
+F 1 "Tiny_RTC_DS1307" H 6550 7281 60  0000 C CNB
+F 2 "" H 6600 6800 60  0000 C CNN
+F 3 "" H 6600 6800 60  0000 C CNN
+	1    6550 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L sensores:PMS-5003 U?
+U 1 1 65D923E7
+P 6200 1550
+F 0 "U?" V 6363 622 50  0000 R CNN
+F 1 "PMS-5003" V 6750 1300 50  0000 R CNB
+F 2 "" H 6150 1600 50  0001 C CNN
+F 3 "" H 6150 1600 50  0001 C CNN
+	1    6200 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L sensores:PMS-9103 U?
+U 1 1 65D92972
+P 4800 1550
+F 0 "U?" V 4963 622 50  0000 R CNN
+F 1 "PMS-9103" V 5350 1300 50  0000 R CNB
+F 2 "" H 4750 1600 50  0001 C CNN
+F 3 "" H 4750 1600 50  0001 C CNN
+	1    4800 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65E0F327
+P 3850 1900
+F 0 "#PWR?" H 3850 1750 50  0001 C CNN
+F 1 "+5V" H 3865 2073 50  0000 C CNN
+F 2 "" H 3850 1900 50  0001 C CNN
+F 3 "" H 3850 1900 50  0001 C CNN
+	1    3850 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65E18A23
+P 4750 1900
+F 0 "#PWR?" H 4750 1750 50  0001 C CNN
+F 1 "+5V" H 4765 2073 50  0000 C CNN
+F 2 "" H 4750 1900 50  0001 C CNN
+F 3 "" H 4750 1900 50  0001 C CNN
+	1    4750 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 65E18F97
+P 6200 1900
+F 0 "#PWR?" H 6200 1750 50  0001 C CNN
+F 1 "+5V" H 6215 2073 50  0000 C CNN
+F 2 "" H 6200 1900 50  0001 C CNN
+F 3 "" H 6200 1900 50  0001 C CNN
+	1    6200 1900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65E3698E
+P 4450 1900
+F 0 "#PWR?" H 4450 1650 50  0001 C CNN
+F 1 "GNDREF" H 4455 1727 50  0000 C CNN
+F 2 "" H 4450 1900 50  0001 C CNN
+F 3 "" H 4450 1900 50  0001 C CNN
+	1    4450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65E37DCC
+P 5000 2050
+F 0 "#PWR?" H 5000 1800 50  0001 C CNN
+F 1 "GNDREF" H 5005 1877 50  0000 C CNN
+F 2 "" H 5000 2050 50  0001 C CNN
+F 3 "" H 5000 2050 50  0001 C CNN
+	1    5000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 65E3875B
+P 6400 2000
+F 0 "#PWR?" H 6400 1750 50  0001 C CNN
+F 1 "GNDREF" H 6405 1827 50  0000 C CNN
+F 2 "" H 6400 2000 50  0001 C CNN
+F 3 "" H 6400 2000 50  0001 C CNN
+	1    6400 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 1900 3950 1900
+Wire Wire Line
+	3950 1900 3950 1750
+Wire Wire Line
+	4350 1750 4350 1900
+Wire Wire Line
+	4350 1900 4450 1900
+Wire Wire Line
+	4900 1750 4900 1900
+Wire Wire Line
+	4900 1900 4750 1900
+Wire Wire Line
+	5000 1750 5000 2050
+Wire Wire Line
+	6200 1900 6300 1900
+Wire Wire Line
+	6300 1900 6300 1750
+Wire Wire Line
+	6400 1750 6400 2000
+Wire Wire Line
+	5100 1750 5100 2350
+Wire Wire Line
+	5100 2650 5100 2800
+Wire Wire Line
+	5100 2800 4850 2800
+Connection ~ 5100 2800
+Wire Wire Line
+	5100 2800 5100 3000
+$Comp
+L power:+3.3V #PWR?
+U 1 1 65ECAEBE
+P 4850 2800
+F 0 "#PWR?" H 4850 2650 50  0001 C CNN
+F 1 "+3.3V" H 4865 2973 50  0000 C CNN
+F 2 "" H 4850 2800 50  0001 C CNN
+F 3 "" H 4850 2800 50  0001 C CNN
+	1    4850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 65EC5C07
+P 5100 2500
+F 0 "R?" H 5170 2546 50  0000 L CNN
+F 1 "10k" H 5170 2455 50  0000 L CNN
+F 2 "" V 5030 2500 50  0001 C CNN
+F 3 "~" H 5100 2500 50  0001 C CNN
+	1    5100 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 1700 6500 1750
+Wire Wire Line
+	6500 2600 6500 2750
+Wire Wire Line
+	6500 2750 6250 2750
+Connection ~ 6500 2750
+Wire Wire Line
+	6500 2750 6500 2950
+$Comp
+L power:+3.3V #PWR?
+U 1 1 65F28740
+P 6250 2750
+F 0 "#PWR?" H 6250 2600 50  0001 C CNN
+F 1 "+3.3V" H 6265 2923 50  0000 C CNN
+F 2 "" H 6250 2750 50  0001 C CNN
+F 3 "" H 6250 2750 50  0001 C CNN
+	1    6250 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 65F28746
+P 6500 2450
+F 0 "R?" H 6570 2496 50  0000 L CNN
+F 1 "10k" H 6570 2405 50  0000 L CNN
+F 2 "" V 6430 2450 50  0001 C CNN
+F 3 "~" H 6500 2450 50  0001 C CNN
+	1    6500 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:NUCLEO144-F429ZI U?
+U 1 1 65D989A5
+P 2150 6900
+F 0 "U?" H 2150 10881 50  0000 C CNN
+F 1 "NUCLEO144-F429ZI" H 2150 10790 50  0000 L CNB
+F 2 "Module:ST_Morpho_Connector_144_STLink" H 3000 3250 50  0001 L CNN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/data_brief/group0/7b/df/1d/e9/64/55/43/8d/DM00247910/files/DM00247910.pdf/jcr:content/translations/en.DM00247910.pdf" H 1250 7200 50  0001 C CNN
+	1    2150 6900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 1750
+Wire Wire Line
+	6500 1750 6500 2300
+Wire Notes Line
+	500  2400 3100 2400
+Wire Notes Line
+	3100 2400 3100 500 
+Text Notes 600  650  0    89   ~ 18
+Fuente Poder (5V y 3V)
+Text Notes 3850 700  0    89   ~ 18
+Sensores Material Particulado (MP2,5)
+Wire Notes Line
+	3600 500  3600 3100
+Wire Notes Line
+	3600 3100 7750 3100
+Wire Notes Line
+	7750 3100 7750 3150
+Wire Notes Line
+	4150 3100 4150 9950
+Wire Notes Line
+	4150 7750 7800 7750
+Wire Notes Line
+	7800 7750 7800 7800
+Wire Notes Line
+	4150 5750 7800 5750
+Text Notes 4300 3400 0    89   ~ 18
+Sensor de Temperatura y Humedad (DHT 22)
+Text Notes 4350 6000 0    89   ~ 18
+Reloj de Tiempo Real (RTC)
+Text Notes 4350 8100 0    89   ~ 18
+Unidad de almacenamiento (micro SD)
+Text Notes 750  2800 0    89   ~ 18
+Microprocesador (STM32)
+$Comp
+L power:+5V #PWR?
+U 1 1 65E2F9BC
+P 1650 3050
+F 0 "#PWR?" H 1650 2900 50  0001 C CNN
+F 1 "+5V" H 1665 3223 50  0000 C CNN
+F 2 "" H 1650 3050 50  0001 C CNN
+F 3 "" H 1650 3050 50  0001 C CNN
+	1    1650 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L sensores:SPS30 U?
+U 1 1 65D91C60
+P 3800 1800
+F 0 "U?" V 4188 1172 50  0000 R CNN
+F 1 "SPS30" V 4500 1550 50  0000 R TNB
+F 2 "" H 3800 1800 50  0001 C CNN
+F 3 "" H 3800 1800 50  0001 C CNN
+	1    3800 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 1600 1700 1600
+Wire Wire Line
+	1650 3050 1650 3100
+Connection ~ 1650 3100
+Wire Wire Line
+	1650 3100 1650 3250
+Wire Wire Line
+	3700 8200 3450 8200
+Wire Wire Line
+	3700 8900 3450 8900
+Wire Wire Line
+	4050 1750 4050 2150
+Wire Wire Line
+	4150 2150 4150 1750
+Text GLabel 3700 8200 2    50   Input ~ 0
+TX_UART5
+Text GLabel 4050 2150 3    50   Input ~ 0
+TX_UART5
+Text GLabel 4150 2150 3    50   Input ~ 0
+RX_UART5
+Text GLabel 3700 8900 2    50   Input ~ 0
+RX_UART5
+$EndSCHEMATC

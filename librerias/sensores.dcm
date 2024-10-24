@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DHT22_Temperature_Humidity_AM2302
+D A DHT22 temperature and humidity sensor
+K DHT22, temperature, humidity
+$ENDCMP
+#
+$CMP DHT22_Temperature_Humidity_copy
+D A DHT22 temperature and humidity sensor
+K DHT22, temperature, humidity
+$ENDCMP
+#
+#End Doc Library
